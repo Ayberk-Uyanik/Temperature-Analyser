@@ -59,7 +59,7 @@ app = dash.Dash (__name__, external_stylesheets=external_stylesheets)
 app.layout = html.Div([
     html.Div ([
         html.Label("Temperature Analyser v1.0", style={"font-size": "22px", "font-weight": "bold", "color":"black", "display":"inline-block"}),
-        html.A ("GitHub Repository", href="https://github.com/Ayberk-Uyanik/Velocitemperature", style={"text-decoration":"none",
+        html.A ("GitHub Repository", href="https://github.com/Ayberk-Uyanik/Temperature-Analyser", style=        {"text-decoration":"none",
                                                                                                        "color":"black",
                                                                                                        "margin-left":"50em",
                                                                                                        "font-weight":"bold"})
@@ -149,7 +149,6 @@ app.layout = html.Div([
                 html.Button("Calculate & Display", id="calculate", style=button_style, n_clicks=0),
                 html.Br (),
                 dcc.Dropdown (id="pre_drill_dropdown",
-                              # options=[{"label": i, "value": i} for i in depth_types],
                               style={"width":"450px", "margin-left":"1em"},
                               value="True Vertical Depth below sea level - TVDss (m.)",
                               clearable=False),
@@ -275,10 +274,6 @@ app.layout = html.Div([
                 html.Div (id="datatable"),
                 html.Div([
                     html.Br(),
-                    html.Div ([
-                        # dcc.Graph (id="postdrill_grads", style={"width":"50%", "display":"inline-block",
-                        #                                         "margin-left":"50"})
-                    ])
                 ])
         ]),
 
