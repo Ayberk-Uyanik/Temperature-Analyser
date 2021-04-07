@@ -1,0 +1,2 @@
+# Temperature-Analyser
+Temperature Analyser v1.0 is designed as a web application helping users to determine pre&amp;post drill temperature conditions in vertical boreholes. Development is based on dash &amp; plotly.
