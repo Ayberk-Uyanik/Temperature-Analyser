@@ -1,1 +1,4 @@
 dash=2.15.0
+plotly
+openpyxl
+gunicorn
