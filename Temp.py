@@ -56,6 +56,8 @@ conversion_types = ["Meters to Feet", "Feet to Meters", "Fahrenheit to Celsius",
 # App Layout Codes #
 app = dash.Dash (__name__, external_stylesheets=external_stylesheets)
 
+server = app.server
+
 app.layout = html.Div([
     html.Div ([
         html.Label("Temperature Analyser v1.0", style={"font-size": "22px", "font-weight": "bold", "color":"black", "display":"inline-block"}),
